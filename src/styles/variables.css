@@ -1,0 +1,132 @@
+/* CSS Variables for theming */
+:root {
+  /* Base colors */
+  --viewer-bg: #1a1a1a;
+  --viewer-color: #e5e7eb;
+
+  /* Log display */
+  --log-bg: #1a1a1a;
+  --log-border-color: #333;
+  --log-hover-bg: #2a2a2a;
+
+  /* Line numbers */
+  --log-line-number-color: #666;
+
+  /* Timestamps */
+  --log-timestamp-color: #888;
+
+  /* Log levels */
+  --log-debug-bg: #374151;
+  --log-debug-color: #9ca3af;
+
+  --log-info-bg: #1e3a5f;
+  --log-info-color: #60a5fa;
+
+  --log-warn-bg: #4a4000;
+  --log-warn-color: #fbbf24;
+
+  --log-error-bg: #450a0a;
+  --log-error-color: #f87171;
+
+  --log-fatal-bg: #450a0a;
+  --log-fatal-color: #ef4444;
+
+  /* Source */
+  --log-source-color: #a78bfa;
+
+  /* Message */
+  --log-message-color: #e5e7eb;
+
+  /* Highlight */
+  --log-highlight-bg: #fbbf24;
+  --log-highlight-color: #000;
+
+  /* Metadata */
+  --log-metadata-bg: #1f2937;
+  --log-metadata-border: #3b82f6;
+
+  /* Scroll button */
+  --log-scroll-btn-bg: #3b82f6;
+  --log-scroll-btn-color: white;
+
+  /* Toolbar */
+  --toolbar-bg: #252525;
+  --toolbar-border: #333;
+
+  /* Buttons */
+  --btn-border: #444;
+  --btn-bg: #333;
+  --btn-color: #ccc;
+  --btn-hover-bg: #444;
+  --btn-active-bg: #3b82f6;
+  --btn-active-border: #3b82f6;
+  --btn-active-color: white;
+  --btn-danger-bg: #dc2626;
+  --btn-danger-border: #dc2626;
+
+  /* Search */
+  --search-bg: #252525;
+  --search-border: #333;
+
+  /* Inputs */
+  --input-border: #444;
+  --input-bg: #1a1a1a;
+  --input-color: #e5e7eb;
+  --input-focus-border: #3b82f6;
+
+  /* Clear button */
+  --clear-btn-color: #888;
+  --clear-btn-hover-color: #fff;
+
+  /* Select */
+  --select-border: #444;
+  --select-bg: #333;
+  --select-color: #ccc;
+
+  /* Results */
+  --results-color: #888;
+
+  /* Filter */
+  --filter-bg: #252525;
+  --filter-border: #333;
+  --filter-label-color: #888;
+
+  /* Checkbox */
+  --checkbox-hover-bg: #333;
+  --checkbox-active-bg: #3b82f6;
+  --checkbox-active-border: #3b82f6;
+  --checkbox-active-color: white;
+  --checkbox-color: #ccc;
+}
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background-color: var(--viewer-bg);
+  color: var(--viewer-color);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--log-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
