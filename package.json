@@ -1,6 +1,6 @@
 {
   "name": "@feyman/vue-log-viewer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A high-performance Vue 3 log viewer with virtual scrolling and real-time streaming",
   "type": "module",
   "main": "./dist/vue-log-viewer.umd.cjs",
