@@ -4,6 +4,10 @@ on:
   release:
     types: [published]
 
+  push:
+    tags:
+      - 'v*'
+
   workflow_dispatch:
     inputs:
       version:
@@ -64,6 +68,12 @@ jobs:
 
       - name: Publish to NPM (Release)
         if: github.event_name == 'release'
+        run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish to NPM (Push Tag)
+        if: github.event_name == 'push'
         run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
